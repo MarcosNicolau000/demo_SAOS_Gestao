@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GHC Gestão | Compras & Suprimentos</title>
+<link rel="icon" href="__LOGO__">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js" defer></script>
+<style>
+/*@@CSS@@*/
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <div class="brand-logo"><img src="__LOGO__" alt="GHC Facilities"></div>
+      <div class="brand-sub"><span>Gestão integrada</span><b>ERP</b></div>
+    </div>
+    <nav class="nav" id="nav"></nav>
+    <div class="sidebar-foot">
+      <div class="row" style="gap:6px;margin-bottom:6px;color:#34D399"><span class="pulse"></span><b style="color:#34D399">Ambiente de demonstração</b></div>
+      Dados fictícios salvos apenas neste navegador.<br>
+      Desenvolvido por <b>SAOS Technologies</b>
+    </div>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <div class="row">
+        <button class="btn btn-ghost btn-icon mobile-menu" id="menuBtn" aria-label="Abrir menu"></button>
+        <div class="crumb"><span>GHC Gestão</span><span>/</span><span id="crumbSection"></span><span>/</span><strong id="crumbPage"></strong></div>
+      </div>
+      <div class="topbar-right">
+        <span class="live"><span class="pulse"></span>Sistema online</span>
+        <button class="btn btn-ghost btn-sm" id="resetBtn" title="Restaurar os dados de demonstração"></button>
+        <div class="user-switch" title="Trocar perfil (simula as alçadas de aprovação)">
+          <div class="avatar" id="userAvatar"></div>
+          <select id="userSelect" aria-label="Usuário atual"></select>
+        </div>
+      </div>
+    </header>
+    <main class="view" id="view"></main>
+  </div>
+</div>
+<div class="toasts" id="toasts"></div>
+<script>
+/*@@JS@@*/
+</script>
+</body>
+</html>
